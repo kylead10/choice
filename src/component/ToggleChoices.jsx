@@ -10,10 +10,16 @@ const ToggleChoices = () => {
   });
 
   const toggleChoice = (choice) => {
-    setChoices((prevChoices) => ({
-      ...prevChoices,
-      [choice]: !prevChoices[choice],
-    }));
+    // Count the number of active choices
+    const activeChoicesCount = Object.values(choices).filter(Boolean).length;
+
+    // Allow toggling only if less than or equal to two choices are active
+    if (choices[choice] || activeChoicesCount < 2) {
+      setChoices((prevChoices) => ({
+        ...prevChoices,
+        [choice]: !prevChoices[choice],
+      }));
+    }
   };
 
   return (
