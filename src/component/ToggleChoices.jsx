@@ -18,15 +18,29 @@ const ToggleChoices = () => {
   return (
     <div>
       <h2>Select your design options of choice:</h2>
-      <button onClick={() => toggleChoice('good')}>
-        {choices.good ? 'Good (On)' : 'Good (Off)'}
-      </button>
-      <button onClick={() => toggleChoice('cheap')}>
-        {choices.cheap ? 'Cheap (On)' : 'Cheap (Off)'}
-      </button>
-      <button onClick={() => toggleChoice('fast')}>
-        {choices.fast ? 'Fast (On)' : 'Fast (Off)'}
-      </button>
+      <div className='toggle-buttons'>
+        <div
+          className={`toggle-button ${choices.good ? 'active' : ''}`}
+          onClick={() => toggleChoice('good')}
+        >
+          {choices.good ? <BiToggleRight /> : <BiToggleLeft />}
+          <span>Good</span>
+        </div>
+        <div
+          className={`toggle-button ${choices.cheap ? 'active' : ''}`}
+          onClick={() => toggleChoice('cheap')}
+        >
+          {choices.cheap ? <BiToggleRight /> : <BiToggleLeft />}
+          <span>Cheap</span>
+        </div>
+        <div
+          className={`toggle-button ${choices.fast ? 'active' : ''}`}
+          onClick={() => toggleChoice('fast')}
+        >
+          {choices.fast ? <BiToggleRight /> : <BiToggleLeft />}
+          <span>Fast</span>
+        </div>
+      </div>
       <p>
         Current choices:{' '}
         {Object.entries(choices)
