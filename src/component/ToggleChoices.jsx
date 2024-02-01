@@ -1,19 +1,38 @@
 import { useState } from 'react';
 
 const ToggleChoices = () => {
-  const [choice, setChoice] = useState('Choice 1');
+  const [choices, setChoices] = useState({
+    good: false,
+    cheap: false,
+    fast: false,
+  });
 
-  const toggleChoice = () => {
-    setChoice(choice === 'Good' ? 'Cheap' : 'Fast');
+  const toggleChoice = (choice) => {
+    setChoices((prevChoices) => ({
+      ...prevChoices,
+      [choice]: !prevChoices[choice],
+    }));
   };
 
   return (
     <div>
       <h2>Select your design options of choice:</h2>
-      <button onClick={toggleChoice}>Good</button>
-      <button onClick={toggleChoice}>Cheap</button>
-      <button onClick={toggleChoice}>Fast</button>
-      <p>Current choice: {choice}</p>
+      <button onClick={() => toggleChoice('good')}>
+        {choices.good ? 'Good (On)' : 'Good (Off)'}
+      </button>
+      <button onClick={() => toggleChoice('cheap')}>
+        {choices.cheap ? 'Cheap (On)' : 'Cheap (Off)'}
+      </button>
+      <button onClick={() => toggleChoice('fast')}>
+        {choices.fast ? 'Fast (On)' : 'Fast (Off)'}
+      </button>
+      <p>
+        Current choices:{' '}
+        {Object.entries(choices)
+          .filter(([_, value]) => value)
+          .map(([key]) => key)
+          .join(', ') || 'None'}
+      </p>
     </div>
   );
 };
