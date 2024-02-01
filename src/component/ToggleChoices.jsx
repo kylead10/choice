@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { BiToggleLeft, BiToggleRight } from 'react-icons/bi';
-import '../index.css';
+import '../index.css'; // Make sure this path is correct
 
 const ToggleChoices = () => {
   const [choices, setChoices] = useState({
@@ -24,21 +24,33 @@ const ToggleChoices = () => {
           className={`toggle-button ${choices.good ? 'active' : ''}`}
           onClick={() => toggleChoice('good')}
         >
-          {choices.good ? <BiToggleRight /> : <BiToggleLeft />}
+          {choices.good ? (
+            <BiToggleRight className='toggle-icon' />
+          ) : (
+            <BiToggleLeft className='toggle-icon' />
+          )}
           <span>Good</span>
         </div>
         <div
           className={`toggle-button ${choices.cheap ? 'active' : ''}`}
           onClick={() => toggleChoice('cheap')}
         >
-          {choices.cheap ? <BiToggleRight /> : <BiToggleLeft />}
+          {choices.cheap ? (
+            <BiToggleRight className='toggle-icon' />
+          ) : (
+            <BiToggleLeft className='toggle-icon' />
+          )}
           <span>Cheap</span>
         </div>
         <div
           className={`toggle-button ${choices.fast ? 'active' : ''}`}
           onClick={() => toggleChoice('fast')}
         >
-          {choices.fast ? <BiToggleRight /> : <BiToggleLeft />}
+          {choices.fast ? (
+            <BiToggleRight className='toggle-icon' />
+          ) : (
+            <BiToggleLeft className='toggle-icon' />
+          )}
           <span>Fast</span>
         </div>
       </div>

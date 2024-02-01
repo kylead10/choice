@@ -57,6 +57,11 @@ h2 {
   font-size: 50px;
 }
 
+p {
+  font-size: 24px;
+  font-weight: 680;
+}
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
