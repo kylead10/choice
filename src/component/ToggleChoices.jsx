@@ -9,7 +9,7 @@ const ToggleChoices = () => {
 
   return (
     <div>
-      <h2>Toggle between two choices:</h2>
+      <h2></h2>
       <button onClick={toggleChoice}>Toggle</button>
       <p>Current choice: {choice}</p>
     </div>

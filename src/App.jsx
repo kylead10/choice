@@ -1,5 +1,11 @@
+import ToggleChoices from './component/ToggleChoices';
+
 const App = () => {
-  return <div>App</div>;
+  return (
+    <>
+      <ToggleChoices />
+    </>
+  );
 };
 
 export default App;
