@@ -12,7 +12,7 @@ const ToggleChoices = () => {
       <h2>Select your design options of choice:</h2>
       <button onClick={toggleChoice}>Good</button>
       <button onClick={toggleChoice}>Cheap</button>
-      <button onClick={toggleChoice}>Toggle</button>
+      <button onClick={toggleChoice}>Fast</button>
       <p>Current choice: {choice}</p>
     </div>
   );
