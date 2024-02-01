@@ -4,7 +4,7 @@ const ToggleChoices = () => {
   const [choice, setChoice] = useState('Choice 1');
 
   const toggleChoice = () => {
-    setChoice(choice === 'Choice 1' ? 'Choice 2' : 'Choice 1');
+    setChoice(choice === 'Good' ? 'Cheap' : 'Fast');
   };
 
   return (
