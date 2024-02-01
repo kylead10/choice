@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { BiToggleLeft, BiToggleRight } from 'react-icons/bi';
 
 const ToggleChoices = () => {
   const [choices, setChoices] = useState({
@@ -29,7 +30,7 @@ const ToggleChoices = () => {
       <p>
         Current choices:{' '}
         {Object.entries(choices)
-          .filter(([_, value]) => value)
+          .filter(([, value]) => value)
           .map(([key]) => key)
           .join(', ') || 'None'}
       </p>
