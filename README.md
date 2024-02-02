@@ -13,7 +13,7 @@ Implementation:
 Technologies Used:
 -React: The project was built using React to create a dynamic and interactive user interface.
 -React Icons (BiToggleLeft, BiToggleRight): Icons was used to represent the toggle options for a better user experience.
--CSS: Styling will be applied using CSS to enhance the visual appearance of the user interface.
+-CSS: Styling was applied using CSS to enhance the visual appearance of the user interface.
 
 Usage:
 -Users can navigate to the application and observe the available options: "cheap", "fast", and "good".
