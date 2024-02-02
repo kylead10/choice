@@ -11,7 +11,7 @@ Implementation:
   The project will involve creating a user interface where users can toggle between these options and observe the constraints enforced by the system. The interface will visually indicate the selected options and provide feedback on the chosen combination.
 
 Technologies Used:
--React: The project will be built using React to create a dynamic and interactive user interface.
+-React: The project was built using React to create a dynamic and interactive user interface.
 -React Icons (BiToggleLeft, BiToggleRight): Icons will be used to represent the toggle options for a better user experience.
 -CSS: Styling will be applied using CSS to enhance the visual appearance of the user interface.
 
