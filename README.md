@@ -1,5 +1,5 @@
 Project Description: Job Completion Options.
-This project is inspired by the classic "cheap, fast, good" dilemma often encountered in job completion scenarios.  In this project, we explore the constraints and possibilities of these options.
+This project is inspired by the classic "cheap, fast, good" dilemma often encountered in job completion scenarios.  In this project, we explore the constraints and possibilities of these options /choic.
 
 Objectives:
 The primary objective of this project is to implement a system that allows users to choose between three options: "cheap", "fast", and "good". However, there are specific constraints imposed on these choices:
