@@ -22,6 +22,19 @@ const ToggleChoices = () => {
     }
   };
 
+  // Define conditional logic based on selected choices
+  let conditionalMessage = '';
+  if (choices.good && choices.cheap && choices.fast) {
+    conditionalMessage =
+      'You can only choose two options at a time. Please deselect one.';
+  } else if (choices.good && choices.cheap) {
+    conditionalMessage = 'You have chosen "Good" and "Cheap".';
+  } else if (choices.good && choices.fast) {
+    conditionalMessage = 'You have chosen "Good" and "Fast".';
+  } else if (choices.cheap && choices.fast) {
+    conditionalMessage = 'You have chosen "Cheap" and "Fast".';
+  }
+
   return (
     <div>
       <h2>Select your job completion options:</h2>
@@ -67,6 +80,7 @@ const ToggleChoices = () => {
           .map(([key]) => key)
           .join(', ') || 'None'}
       </p>
+      {conditionalMessage && <p>{conditionalMessage}</p>}
     </div>
   );
 };
