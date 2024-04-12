@@ -29,13 +29,11 @@ const ToggleChoices = () => {
       'You can only choose two options at a time. Please deselect one.';
   } else if (choices.good && choices.cheap) {
     conditionalMessage =
-      'You have chosen "Good" and "Cheap" Users can opt for both quality and affordability, but the job may not be completed quickly';
+      'This prioritizes quality and affordability, but may result in slower completion.';
   } else if (choices.good && choices.fast) {
-    conditionalMessage =
-      'You have chosen "Good" and "Fast". Users can prioritize quality and quick delivery, but this might come at a higher cost.';
+    conditionalMessage = 'You have chosen "Good" and "Fast".';
   } else if (choices.cheap && choices.fast) {
-    conditionalMessage =
-      'You have chosen "Cheap" and "Fast". User can choose to have the job completed at a low cost and quickly, but the quality might not be optimal.';
+    conditionalMessage = 'You have chosen "Cheap" and "Fast".';
   }
 
   return (
@@ -83,7 +81,7 @@ const ToggleChoices = () => {
           .map(([key]) => key)
           .join(', ') || 'None'}
       </p>
-      {conditionalMessage && <p>{conditionalMessage}</p>}
+      {conditionalMessage}
     </div>
   );
 };
