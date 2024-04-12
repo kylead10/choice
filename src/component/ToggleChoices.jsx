@@ -28,7 +28,8 @@ const ToggleChoices = () => {
     conditionalMessage =
       'You can only choose two options at a time. Please deselect one.';
   } else if (choices.good && choices.cheap) {
-    conditionalMessage = 'You have chosen "Good" and "Cheap".';
+    conditionalMessage =
+      'You have chosen "Good" and "Cheap" Users can opt for both quality and affordability, but the job may not be completed quickly';
   } else if (choices.good && choices.fast) {
     conditionalMessage =
       'You have chosen "Good" and "Fast". Users can prioritize quality and quick delivery, but this might come at a higher cost.';
