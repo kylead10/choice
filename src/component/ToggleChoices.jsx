@@ -40,7 +40,7 @@ const ToggleChoices = () => {
 
   return (
     <div>
-      <h2>Select your job completion options:</h2>
+      <h2>Select your job completion options: you have only two choices</h2>
       <div className='toggle-buttons'>
         <div
           className={`toggle-button ${choices.good ? 'active' : ''}`}
