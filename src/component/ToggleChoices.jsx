@@ -30,7 +30,8 @@ const ToggleChoices = () => {
   } else if (choices.good && choices.cheap) {
     conditionalMessage = 'You have chosen "Good" and "Cheap".';
   } else if (choices.good && choices.fast) {
-    conditionalMessage = 'You have chosen "Good" and "Fast".';
+    conditionalMessage =
+      'You have chosen "Good" and "Fast". Users can prioritize quality and quick delivery, but this might come at a higher cost.';
   } else if (choices.cheap && choices.fast) {
     conditionalMessage =
       'You have chosen "Cheap" and "Fast". User can choose to have the job completed at a low cost and quickly, but the quality might not be optimal.';
