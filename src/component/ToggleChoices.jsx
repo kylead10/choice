@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { BiToggleLeft, BiToggleRight } from 'react-icons/bi';
-import '../index.css'; // Make sure this path is correct
+import '../index.css';
 
 const ToggleChoices = () => {
   const [choices, setChoices] = useState({
