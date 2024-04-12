@@ -67,6 +67,12 @@ span {
   font-weight: 500;
 }
 
+.cM {
+  margin-top: -20px;
+  font-size: larger;
+  font-weight: 500;
+}
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;

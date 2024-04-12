@@ -83,7 +83,7 @@ const ToggleChoices = () => {
           .map(([key]) => key)
           .join(', ') || 'None'}
       </p>
-      {conditionalMessage}
+      <div className='cM'>{conditionalMessage}</div>
     </div>
   );
 };
