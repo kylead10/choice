@@ -18,4 +18,4 @@ Technologies Used:
 Usage:
 -Users can navigate to the application and observe the available options: "cheap", "fast", and "good".
 -Clicking on each option will toggle its state, indicating whether it is selected or not.
--Users will observe how the system enforces the constraints based on their selected combination of options.
+-Users will observe how the system enforces the constraints based on their selected combination of options. 
