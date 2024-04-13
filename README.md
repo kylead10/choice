@@ -8,6 +8,7 @@ The primary objective of this project is to implement a system that allows users
 -Cheap and Fast: Users can choose to have the job completed quickly and at a low cost, but the quality might not be optimal.
 
 -Good but Not Cheap: Users can prioritize quality, ensuring that the job is done well, but this might come at a higher cost and not necessarily completed quickly.
+
 -Good and Cheap but Not Fast: Users can opt for both quality and affordability, but the job may not be completed quickly.
 
 Implementation:
