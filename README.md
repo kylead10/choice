@@ -1,4 +1,4 @@
-Project Description: Job Completion Options (trade off).
+Project Description: Job Completion Options (trade-off).
 This project is inspired by the classic "cheap, fast, good" dilemma often encountered in job completion scenarios. In this project, we explore the constraints and possibilities of these options / choices.
 
 Objectives:
