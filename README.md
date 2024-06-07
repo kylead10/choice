@@ -8,7 +8,7 @@ The primary objective of this project is to implement a system that allows users
 -Good and Cheap but Not Fast: Users can opt for both quality and affordability, but the job may not be completed quickly.
 
 Implementation:
-This project involve creating a user interface where users can toggle between these options and observe the constraints enforced by the system. The interface will visually indicate the selected options and provide feedback on the chosen combination.
+This project involved creating a user interface where users can toggle between these options and observe the constraints enforced by the system. The interface will visually indicate the selected options and provide feedback on the chosen combination.
 
 Technologies Used:
 -React: The project was built using React to create a dynamic and interactive user interface.
